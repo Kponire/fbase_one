@@ -1,0 +1,207 @@
+/* components/NavLinkItem.module.css */
+
+.containerOpen{
+  width: 280px;
+}
+
+.containerClose{
+  width: 80px;
+}
+
+.logo {
+  position: absolute;
+  width: 159.36px;
+  height: 24px;
+  left: calc(50% - 159.36px/2 - 32.32px);
+  top: 30px;
+}
+
+.logoSmall {
+  width: 21.12px;
+  height: 24px;
+  position: absolute;
+  top: 30px;
+  margin-inline: 24px;  
+}
+
+.navlist {
+  position: absolute;
+  width: 100%;
+  height: 464px;
+  left: 0px;
+  top: 70px;
+  gap: 8px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.chevron {
+  box-sizing: border-box;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: 34px;  
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0px 0px 2px 2px;
+  color: rgba(255, 255, 255, 0.5);  
+}
+
+.navLink, .navLink:hover  {
+    position: relative;  
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px 24px;   
+    height: 56px;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: inherit;        
+}
+
+.navLinkLabel {
+  width: 200px;
+  height: 16px;  
+  font-family: 'Core Sans C';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: white; 
+}
+
+.activeNavLinkLabel, .activeNavLinkLabel:hover {
+  color: #14B8FF; 
+}
+  
+.activeNavLink,  .activeNavLink:hover {
+  background: rgba(20, 184, 255, 0.1);
+  color: #14B8FF;
+}
+
+.activeNavLink::before {
+  content: " ";
+  position: absolute;
+  width: 4px;
+  height: 56px;
+  left: 0px;
+  top: 0px;
+  background: #14B8FF;
+  box-shadow: 0px 0px 4px rgba(20, 184, 255, 0.5);
+  border-radius: 0px 2px 2px 0px;
+}
+
+.navDropDownList, .navDropDownList:hover {
+  margin: 0;
+  gap: 8px;
+  height: 28px;
+  background-color: inherit;
+}
+
+.navDropDownListLabel {
+  font-family: 'Core Sans C';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  height: 20px;
+  color: white;
+}
+
+.activenavDropDownListLabel {
+  color: #14B8FF;
+}
+
+.navbar {
+  box-sizing: border-box;
+  /* width: 280px; */
+  height: 100vh;
+  background: rgba(3, 14, 27, 0.9);
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.notification {
+  padding: 8px;
+  width: 31px;
+  height: 24px;
+  gap: 10px;
+  font-family: 'Core Sans C';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  background: #F64740;
+  color: rgba(3, 14, 27, 0.9);
+  text-align: center;
+  border-radius: 999px;        
+}
+
+.profileCon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 24px;
+  position: absolute;
+  width: 100%;
+  height: 72px;
+  left: 0px;
+  bottom: 0px;
+  background: rgba(20, 184, 255, 0.1);
+}
+
+.profileConClose {
+  padding: 12px !important;  
+  height: 80px !important;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  height: 48px;  
+}
+
+.profileClose {
+  width: 56px !important;
+  height: 56px !important;  
+}
+
+.profilePhoto {
+  padding: 0px;
+  gap: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 999999px;
+  background: #8699B2;
+}
+
+.profileTextCon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  height: 27px;
+}
+
+.profileText { 
+  font-family: 'Core Sans C';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.logout {
+  font-family: 'Core Sans C';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);  
+}
